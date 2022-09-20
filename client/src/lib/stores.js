@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { readable } from "svelte/store";
 import WebRenderer from "@elemaudio/web-renderer";
 
 let context = new AudioContext();
@@ -14,5 +14,5 @@ let renderer = new WebRenderer();
   node.connect(context.destination);
 })();
 
-export const core = writable(renderer);
-export const ctx = writable(context);
+export const core = readable(renderer);
+export const ctx = readable(context);

@@ -12,3 +12,9 @@ body {
   background-color: #e3dbc3;
   font: 20px/1.6 sans-serif;
 }
+
+/* utility classes */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
